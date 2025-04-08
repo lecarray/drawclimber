@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Draw Climber是一款有趣的物理绘图游戏，画出你的角色腿部，帮助它攀爬各种障碍物！">
+    <meta name="keywords" content="Draw Climber, 攀爬游戏, 物理游戏, 在线游戏, 休闲游戏">
+    <title>Draw Climber - 创意攀爬绘图游戏 | drawclimber.top</title>
+    <link rel="canonical" href="https://drawclimber.top" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- 谷歌分析 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHQ8XX749T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VHQ8XX749T');
+    </script>
+    <!-- 引入Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 语言切换器 -->
+    <div class="language-switch">
+        <select id="language-selector" class="bg-transparent outline-none">
+            <option value="zh-CN">中文</option>
+            <option value="en-US">English</option>
+        </select>
+    </div>
+
+    <!-- 头部 -->
+    <header class="header-gradient text-white py-12 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-lang-zh="Draw Climber - 创意攀爬绘图游戏" data-lang-en="Draw Climber - Creative Climbing Drawing Game">Draw Climber - 创意攀爬绘图游戏</h1>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto" data-lang-zh="画出你角色的腿部，帮助它克服各种障碍物，到达终点！" data-lang-en="Draw your character's legs to help it overcome obstacles and reach the finish line!">画出你角色的腿部，帮助它克服各种障碍物，到达终点！</p>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto py-8 px-4">
+        <!-- 图片轮播 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-center" data-lang-zh="游戏展示" data-lang-en="Game Showcase">游戏展示</h2>
+            <div class="carousel-container rounded-xl shadow-lg">
+                <div class="carousel-slide active" style="background-image: url('img/draw-climber.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('img/maxresdefault.jpg')"></div>
+                <button class="carousel-btn prev-btn">❮</button>
+                <button class="carousel-btn next-btn">❯</button>
+            </div>
+        </section>
+
+        <!-- 游戏 iframe -->
+        <section class="mb-16 game-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <h2 class="text-2xl font-bold p-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white" data-lang-zh="立即游玩" data-lang-en="Play Now">立即游玩</h2>
+            <div class="p-4">
+                <div class="iframe-container">
+                    <iframe src="https://games.crazygames.com/en_US/draw-climber/index.html?v=1.328" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏介绍 -->
+        <section class="mb-16 game-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <h2 class="text-2xl font-bold p-6 bg-gradient-to-r from-green-500 to-teal-500 text-white" data-lang-zh="游戏介绍" data-lang-en="Game Introduction">游戏介绍</h2>
+            <div class="p-6">
+                <p class="mb-4" data-lang-zh="《Draw Climber》是一款创意十足的物理绘图游戏，由知名游戏开发商推出。游戏的核心玩法非常独特：你需要为你的角色绘制腿部，然后它会使用你绘制的形状尝试攀爬各种障碍物。" data-lang-en="'Draw Climber' is a highly creative physics-based drawing game released by a renowned game developer. The core gameplay is unique: you need to draw legs for your character, and it will use the shapes you've drawn to climb various obstacles.">《Draw Climber》是一款创意十足的物理绘图游戏，由知名游戏开发商推出。游戏的核心玩法非常独特：你需要为你的角色绘制腿部，然后它会使用你绘制的形状尝试攀爬各种障碍物。</p>
+                
+                <p class="mb-4" data-lang-zh="每个关卡都提供了不同的挑战，从简单的丘陵到复杂的峡谷和陡峭的山脉。你需要根据不同的地形，巧妙地设计腿部形状 - 有时候圆形更好，有时候尖形更有效，有时候你甚至需要创造出完全不对称的设计！" data-lang-en="Each level offers different challenges, from simple hills to complex canyons and steep mountains. You need to cleverly design the leg shapes based on different terrains - sometimes round shapes work better, sometimes pointy ones are more effective, and sometimes you even need to create completely asymmetrical designs!">每个关卡都提供了不同的挑战，从简单的丘陵到复杂的峡谷和陡峭的山脉。你需要根据不同的地形，巧妙地设计腿部形状 - 有时候圆形更好，有时候尖形更有效，有时候你甚至需要创造出完全不对称的设计！</p>
+
+                <p class="mb-4" data-lang-zh="游戏的物理引擎非常真实，你会看到你的角色如何使用你绘制的腿部形状与环境互动。这种即时反馈让游戏既有挑战性又充满乐趣，每次失败都会让你学到新的东西，每次成功都会带来极大的满足感。" data-lang-en="The game's physics engine is very realistic, and you'll see how your character uses the leg shapes you've drawn to interact with the environment. This instant feedback makes the game both challenging and fun - every failure teaches you something new, and every success brings great satisfaction.">游戏的物理引擎非常真实，你会看到你的角色如何使用你绘制的腿部形状与环境互动。这种即时反馈让游戏既有挑战性又充满乐趣，每次失败都会让你学到新的东西，每次成功都会带来极大的满足感。</p>
+
+                <p data-lang-zh="《Draw Climber》适合所有年龄段的玩家，简单易上手但也有足够的深度让你不断探索。这是一款完美的休闲游戏，既能锻炼你的创造力，又能给你带来欢乐时光！" data-lang-en="'Draw Climber' is suitable for players of all ages, easy to pick up but with enough depth to keep you exploring. It's a perfect casual game that both exercises your creativity and brings you joyful moments!">《Draw Climber》适合所有年龄段的玩家，简单易上手但也有足够的深度让你不断探索。这是一款完美的休闲游戏，既能锻炼你的创造力，又能给你带来欢乐时光！</p>
+            </div>
+        </section>
+
+        <!-- 游戏技巧 -->
+        <section class="mb-16 game-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <h2 class="text-2xl font-bold p-6 bg-gradient-to-r from-orange-500 to-red-500 text-white" data-lang-zh="游戏技巧" data-lang-en="Game Tips">游戏技巧</h2>
+            <div class="p-6">
+                <ul class="list-disc pl-5 space-y-3">
+                    <li data-lang-zh="对于上坡路段，尝试设计尖锐的腿部形状，这样更容易抓住地面。" data-lang-en="For uphill sections, try designing sharp leg shapes that can easily grip the ground.">对于上坡路段，尝试设计尖锐的腿部形状，这样更容易抓住地面。</li>
+                    <li data-lang-zh="平坦路面上，圆形或矩形的腿部能提供更稳定的移动。" data-lang-en="On flat surfaces, round or rectangular leg shapes provide more stable movement.">平坦路面上，圆形或矩形的腿部能提供更稳定的移动。</li>
+                    <li data-lang-zh="不要害怕尝试非对称设计 - 有时候一条腿比另一条长可以帮助克服特定障碍。" data-lang-en="Don't be afraid to try asymmetrical designs - sometimes having one leg longer than the other can help overcome specific obstacles.">不要害怕尝试非对称设计 - 有时候一条腿比另一条长可以帮助克服特定障碍。</li>
+                    <li data-lang-zh="观察你的角色如何移动，并根据失败经验调整设计。" data-lang-en="Observe how your character moves and adjust your design based on failure experiences.">观察你的角色如何移动，并根据失败经验调整设计。</li>
+                    <li data-lang-zh="有些关卡可能需要多次尝试才能找到最佳形状，耐心是关键！" data-lang-en="Some levels may require multiple attempts to find the optimal shape, patience is key!">有些关卡可能需要多次尝试才能找到最佳形状，耐心是关键！</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="container mx-auto text-center">
+            <p class="mb-2" data-lang-zh="© 2023 DrawClimber.top - 版权所有" data-lang-en="© 2023 DrawClimber.top - All Rights Reserved">© 2023 DrawClimber.top - 版权所有</p>
+            <p class="text-sm opacity-75" data-lang-zh="本网站仅用于提供游戏信息和体验，游戏版权归原开发商所有。" data-lang-en="This website is for providing game information and experience only. The game copyright belongs to the original developer.">本网站仅用于提供游戏信息和体验，游戏版权归原开发商所有。</p>
+        </div>
+    </footer>
+
+    <!-- 引入自定义脚本 -->
+    <script src="script.js"></script>
+    <script>
+        // 初始化触摸滑动支持
+        document.addEventListener('DOMContentLoaded', function() {
+            initTouchSlide();
+        });
+    </script>
+</body>
+</html> 
