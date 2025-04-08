@@ -48,11 +48,16 @@
                 <div class="carousel-slide" style="background-image: url('img/maxresdefault.jpg')"></div>
                 <button class="carousel-btn prev-btn">❮</button>
                 <button class="carousel-btn next-btn">❯</button>
+                
+                <!-- 添加开始游戏按钮 -->
+                <div class="play-now-overlay">
+                    <a href="#game-section" class="play-now-btn pulse-animation" data-lang-zh="立即开始游戏" data-lang-en="Play Now">立即开始游戏</a>
+                </div>
             </div>
         </section>
 
         <!-- 游戏 iframe -->
-        <section class="mb-16 game-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <section id="game-section" class="mb-16 game-card bg-white rounded-xl shadow-lg overflow-hidden">
             <h2 class="text-2xl font-bold p-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white" data-lang-zh="立即游玩" data-lang-en="Play Now">立即游玩</h2>
             <div class="p-4">
                 <div class="iframe-container">
@@ -104,6 +109,17 @@
         // 初始化触摸滑动支持
         document.addEventListener('DOMContentLoaded', function() {
             initTouchSlide();
+            
+            // 平滑滚动到游戏部分
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
         });
     </script>
 </body>
